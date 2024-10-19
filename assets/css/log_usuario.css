@@ -1,0 +1,59 @@
+body {
+    margin-top: 10%;
+    background-color: rgb(228, 232, 240);      
+}
+#cardbox > h1 {
+    margin-left: 35%;
+}
+
+td{
+    border: none!important;
+}
+
+.movimentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 8px!important;
+}
+
+.movimentacao_text{
+    height: 2.1dvh;
+    overflow: hidden;
+}
+
+.movimentacao_btn {
+    outline: none;
+    border: none;
+    color: #1f84d6;
+    font-size: 20px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    align-self: baseline;
+    top: -1px;
+    position: relative;
+}
+
+.movimentacao_btn:hover{
+    background-color: transparent;
+    transform: scale(1.2);
+    transform: rotate(-90deg);
+}
+
+.expandText{
+    animation: expandText 600ms ease-in-out forwards;
+}
+
+.retractText{
+    animation: retractText 600ms ease-in-out forwards;
+}
+
+@keyframes expandText {
+    from {height: 2.1dvh;}
+    to {height: 6.7dvh;}
+}
+
+@keyframes retractText {
+    from {height: 6.7dvh;}
+    to {height: 2.1dvh;}
+}

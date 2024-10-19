@@ -1,0 +1,351 @@
+body {
+    background-color: rgb(228, 232, 240);
+}
+.card {
+    max-width: 50%;
+    margin-left: 25%;
+    border-radius: 5px;
+    padding: 10px 60px 50px 50px !important;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.card > h1 {
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}
+.form-control {
+    height: 50px !important;
+    font-size: 16px !important;
+}
+.form-control::placeholder {
+    font-size: 18px;
+}
+.form-floating {
+    margin-top: 25px !important;
+}
+.form-floating > label {
+    font-size: 16px;
+}
+.form-select {
+    padding-top: 15px !important;
+    padding-left: 8px!important;
+    font-weight: normal !important;
+    height: 50px !important; 
+    font-size: 1.5rem !important;
+}
+.label_select {
+    font-size: 14px !important;
+    top: 27px;
+    left: 9px;
+    position: relative;
+    color: #7a7a7a;
+}
+.form-step {
+    display: none;
+    transform-origin: top;
+    animation: animate 0.5s;
+}
+.form-step-active {
+    display: block;
+}
+
+/* PROGRESS */
+
+.progressbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+    margin: 2rem 0 6rem;
+}
+
+.progressbar::before,
+.progress {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: whitesmoke;
+    z-index: 1;
+}
+
+.progress {
+    background-color: #1f84d6 !important;
+    width: 0%;
+    height: 5px !important;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.progress-step {
+    width: 4.375rem;
+    height: 4.375rem;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-size: 18px;
+}
+
+.progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+}
+
+.progress-step::after {
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    font-size: 1.4rem;
+    color: black;
+    width: 400px;
+    text-align: center;
+}
+
+.progress-step-active {
+    background-color: #1f84d6;
+    color: #f3f3f3;
+}
+@keyframes animate {
+    from {
+        transform: scale(1, 0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+.btns-group {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.btn-enviar {
+    padding: 0.75rem 1.50rem;
+    display: block;
+    text-decoration: none;
+    background-color: #1f84d6;
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+    opacity: 0.8;
+    width: 120px;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+}
+
+.btn-enviar:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: #15568b;
+    opacity: 1;
+    box-shadow: 0 0 0 1px rgb(0, 0, 0), 0 0 0 3px;
+    transition: 0.5s;
+}
+
+.btn-prev {
+    padding: 0.75rem;
+    display: block;
+    text-decoration: none;
+    background-color: #1f84d6;
+    color: white;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.8;
+    width: 120px;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+}
+
+.btn-prev:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+}
+.btn-next {
+    padding: 0.75rem;
+    display: block;
+    text-decoration: none;
+    background-color: #1f84d6;
+    color: white;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.8;
+    width: 120px;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+}
+.btn-next:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+}
+.hide{
+    display: none;
+}
+
+.botao {
+    height: 50px;
+    width: 5% !important;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 27px !important;
+}
+.btn_modal {
+    margin-top: 25px;
+    border: none; 
+    background-color: #1f84d6; 
+    color: white; 
+    padding: 15px 17px; 
+    border-radius: 0 5px 5px 0;
+}
+
+@media only screen and (max-width: 1500px) {
+    h1 {
+        font-size: 30px !important;
+    }
+    .progressbar {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        counter-reset: step;
+        margin: 2rem 0 6rem;
+    }
+    
+    .progressbar::before,
+    .progress {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 4px;
+        width: 100%;
+        background-color: whitesmoke;
+        z-index: 1;
+    }
+    
+    .progress {
+        background-color: #1f84d6 !important;
+        width: 0%;
+        height: 5px !important;
+        transition: 0.3s;
+        z-index: 2;
+    }
+    .progress-step {
+        width: 4rem;
+        height: 4rem;
+        background-color: #dcdcdc;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        font-size: 15px;
+    }
+    .progress-step::after {
+        content: attr(data-title);
+        position: absolute;
+        top: calc(100% + 0.5rem);
+        font-size: 1.2rem;
+        color: black;
+        width: 400px;
+        text-align: center;
+    }
+    .progress-step::before {
+        counter-increment: step;
+        content: counter(step);
+    }
+    .progress-step-active {
+        background-color: #1f84d6;
+        color: #f3f3f3;
+    }
+    .form-control {
+        height: 45px !important;
+        font-size: 15px !important;
+    }
+    .form-select {
+        height: 45px !important;
+        font-size: 15px !important;
+    }
+    label {
+        font-size: 15px !important;
+    }
+    .label_select{
+        font-size: 12px !important;
+    }
+    .btn_modal {
+        padding: 12.5px 17px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    h1 {
+        font-size: 25px !important;
+    }
+    label {
+        font-size: 13px !important;
+    }
+    .label_select{
+        font-size: 13px !important;
+    }
+    .form-control {
+        font-size: 13px !important;
+    }
+    .form-select {
+        font-size: 13px !important;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    h1 {
+        font-size: 20px !important;
+    }
+    label {
+        font-size: 11px !important;
+    }
+    .label_select{
+        font-size: 11px !important;
+    }
+    .form-control {
+        font-size: 10px !important;
+    }
+    .form-select {
+        font-size: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    h1 {
+        font-size: 20px !important;
+    }
+    label {
+        font-size: 10px !important;
+    }
+    .label_select{
+        font-size: 10px !important;
+    }
+    .form-control {
+        height: 40px !important;
+        font-size: 9px !important;
+    }
+    .form-select {
+        height: 40px !important;
+        font-size: 9px !important;
+        font-weight: 750 !important;
+    }
+    .btn_modal {
+        padding: 10px 17px;
+    }
+}

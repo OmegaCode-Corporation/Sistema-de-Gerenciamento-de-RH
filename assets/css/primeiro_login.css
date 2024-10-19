@@ -1,0 +1,192 @@
+body {
+    background-color: rgb(228, 232, 240);
+}
+
+#qrcode {
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+.card {
+    border-radius: 5px !important;
+    padding: 10px 50px 50px 50px !important;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2) !important;
+}
+.card > h1 {
+    text-align: center;
+    font-size: 26px;
+}
+.card > b > p{
+    font-size: 20px;
+}
+.form-control {
+    font-size: 16px;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+}
+.form-control::placeholder {
+    font-size: 18px;
+}
+.form-floating > label {
+    font-size: 16px;
+}
+
+.form-step {
+    display: none;
+    transform-origin: top;
+    animation: animate 0.5s;
+}
+
+.form-step-active {
+    display: block;
+}
+@keyframes animate {
+    from {
+        transform: scale(1, 0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+/* PROGRESS */
+
+.progressbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+    margin: 2rem 0 6rem;
+}
+
+.progressbar::before,
+.progress {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: whitesmoke;
+    z-index: 1;
+}
+
+.progress {
+    background-color: #1f84d6 !important;
+    width: 0%;
+    height: 5px !important;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.progress-step {
+    width: 4.375rem;
+    height: 4.375rem;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-size: 18px;
+}
+
+.progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+}
+
+.progress-step::after {
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    font-size: 1.4rem;
+    color: black;
+    width: 400px;
+    text-align: center;
+}
+
+.progress-step-active {
+    background-color: #1f84d6;
+    color: #f3f3f3;
+}
+
+/* BOTOES  */
+.btns-group {
+    display: flex;
+}
+
+.btn-enviar {
+    padding: 0.75rem 1.50rem;
+    display: block;
+    text-decoration: none;
+    background-color: #1f84d6;
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+    opacity: 0.8;
+    margin-left: auto;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+}
+
+.btn-enviar:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: #15568b;
+    opacity: 1;
+    box-shadow: 0 0 0 1px rgb(0, 0, 0), 0 0 0 3px;
+    transition: 0.5s;
+}
+
+.btn-prev {
+    padding: 0.75rem;
+    display: block;
+    text-decoration: none;
+    background-color: #1f84d6;
+    color: white;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.8;
+    width: 30%;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+}
+
+.btn-prev:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.btn-next {
+    padding: 0.75rem;
+    display: block;
+    text-decoration: none;
+    background-color: #1f84d6;
+    color: white;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.8; 
+    margin-left: auto;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+}
+
+.btn-next:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.row-hide{
+    display: none;
+}

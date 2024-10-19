@@ -1,0 +1,114 @@
+body {
+    background-color: rgb(228, 232, 240);
+}
+
+.card {
+    max-width: 50%;
+    margin-left: 25%;
+    border-radius: 5px;
+}
+
+.card > h1 {
+    text-align: center;
+}
+
+.form-control {
+    height: 50px !important;
+    font-size: 16px !important;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+}
+
+.form-control::placeholder {
+    font-size: 18px;
+}
+
+#input-busca{
+    height: unset !important;
+    font-size: unset !important;
+    box-shadow: unset !important;
+}
+
+#input-busca::placeholder {
+    font-size: unset !important;
+}
+
+.form-floating > label {
+    font-size: 16px;
+}
+
+.form-step {
+    display: block;
+    transform-origin: top;
+    animation: animate 0.5s;
+}
+
+@keyframes animate {
+    from {
+        transform: scale(1, 0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+#cadastrar {
+    border: none;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+    height: 40px;
+    background-color: #1f84d6;
+    color: white;
+    font-size: 16px;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+#cadastrar:hover {
+    opacity: 1;
+}
+
+@media (max-width: 1031px) {
+    h1{
+        font-size: 30px !important;
+    }
+    h4{
+        font-size: 15px !important;
+    }
+    .form-control{
+        height: 40px !important;
+    }
+    label{
+        font-size: 15px !important;
+    }
+}
+
+@media (max-width: 990px) {
+    h1{
+        font-size: 25px !important;
+    }
+    h4{
+        font-size: 15px !important;
+    }
+    .form-control{
+        height: 40px !important;
+    }
+    label{
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 900px){
+    h1{
+        font-size: 28px !important;
+    }
+    h4{
+        font-size: 15px !important;
+    }
+    .form-control{
+        height: 35px !important;
+    }
+    label{
+        font-size: 8px !important;
+    }
+}

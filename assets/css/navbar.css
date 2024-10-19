@@ -1,0 +1,165 @@
+
+body{
+    background-color: rgb(228, 232, 240);
+}
+
+#favicon {
+    margin-left: 50px;
+    margin-top: -28px;
+    position: fixed;
+    width: 55px;
+    height: 55px;
+}
+
+.navbar {
+    position: sticky;
+    background-color: #1f84d6;
+    width: 100%;
+    height: 75px;
+    border-radius: 0px;
+}
+
+.navbar_left{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.navbar_right{
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar .btn:hover{
+    filter: none !important;
+    outline: none !important;
+}
+
+.container-fluid{
+    padding: 0 25px;
+}
+
+#dropdownMenuButton{
+    width: 100%;
+}
+
+.container-fluid:before, .container-fluid:after{
+    content: unset;
+}
+
+.dropdown {
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.dropdown:hover {
+    background-color: rgb(233, 232, 232);
+}
+
+.dropdown-item {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dropdown-item:hover{
+    color: black;
+    background-color: whitesmoke;
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    border-radius: 5px;
+}
+
+.bx-log-in{
+    background-color: #1f84d6;
+}
+
+.itens{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+}
+
+.text > a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.icon{
+    color: #FFF !important;
+    font-size: 18px;
+}
+
+.navbar-btns{
+    transition: all ease-in-out 0.3s;
+}
+
+.navbar-btns:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.dropdown-breakline{
+    height: 5px;
+    border-top: 2px solid #c3c3c3;
+    padding: 0 1rem;
+    width: calc(100% - 2rem);
+    margin: auto;
+    margin-top: 10px;
+}
+
+/*CONTROLE DE RESPONSIVIDADE*/
+@media only screen and (max-width: 1000px) {
+    #favicon {
+        position: fixed;
+        margin-left: 50px;
+        margin-top: -28px;
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media only screen and (max-width: 864px) {
+    #dropdownMenuButton{
+        width: 110px;
+        font-size: 12px;
+    }
+    .icon{
+        font-size: 15px;
+    }
+    .text > a{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    #dropdownMenuButton{
+        width: 90px;
+        font-size: 9px;
+    }
+    .icon{
+        font-size: 10px;
+    }
+    .text > a{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    #dropdownMenuButton{
+        width: 71px;
+        font-size: 6.5px;
+    }
+}

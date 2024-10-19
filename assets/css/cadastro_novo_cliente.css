@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(228, 232, 240);
+}
+.card {
+    max-width: 50%;
+    margin-left: 25%;
+    border-radius: 5px;
+    padding: 10px 40px 40px 40px !important;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.card > h1 {
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}
+.form-control {
+    height: 50px !important;
+    font-size: 16px !important;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+}
+.form-control::placeholder {
+    font-size: 18px;
+}
+.form-floating > label {
+    font-size: 16px;
+}
+.form-step {
+    display: block;
+    transform-origin: top;
+    animation: animate 0.5s;
+}
+
+@keyframes animate {
+    from {
+        transform: scale(1, 0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+#cadastrar {
+    border: none;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+    height: 40px;
+    background-color: #1f84d6;
+    color: white;
+    font-size: 16px;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+#cadastrar:hover {
+    opacity: 1;
+}

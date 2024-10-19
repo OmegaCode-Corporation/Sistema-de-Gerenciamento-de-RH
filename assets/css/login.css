@@ -1,0 +1,126 @@
+.navbar {
+    background-color: #1f84d6;
+    width: 100%;
+    border-radius: 0px;
+    position: absolute;
+}
+body {
+    background-color: rgb(228, 232, 240);
+}
+form{
+    background-color: white;
+    height: 350px;
+    width: 500px;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+/* form{ */
+    /* margin-top: 15%; 
+    align-items: center;
+    background-color: white;
+    min-height: 23%;
+    max-width: 23%;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+/* } */
+#flex {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+#flex > i {
+    font-size: 32px;
+}
+#flex > p {
+    font-size: 20px; 
+    margin-top: 8px; 
+    margin-left: 5px;
+}
+#usuario {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
+    margin-top: 20px;
+    
+}
+#senha {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-top: 20px;
+}
+#btn_submit {
+    width: 50%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-top: 20px;
+    background-color: #1f84d6;
+    color: white;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#versenha_btn {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+}
+#versenha > i {
+    width: 100%;
+    height: auto;
+}
+.senha_wrp {
+    position: relative;
+}
+.form-control {
+    height: 45px !important;
+    font-size: 16px !important;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+}
+.form-control::placeholder {
+    font-size: 18px;
+}
+.form-floating > label {
+    font-size: 14px;
+}
+.form-step {
+    display: block;
+    transform-origin: top;
+    animation: animate 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+    form{
+        background-color: white;
+        height: 350px;
+        width: 300px;
+        padding: 40px;
+        border-radius: 5px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+    #flex > i {
+        font-size: 30px;
+    }
+    #flex > p {
+        font-size: 18px; 
+        margin-top: 8px; 
+        margin-left: 5px;
+    }
+}
+
+.opts_btns{
+    display: flex !important;
+    margin: 15px auto!important;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
